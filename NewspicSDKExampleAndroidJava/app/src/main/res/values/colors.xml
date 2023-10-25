@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="noti_white">#FFFFFFFF</color>
+    <color name="noti_blue">#FF1E92FF</color>
+    <color name="noti_black">#FF13141B</color>
+</resources>
