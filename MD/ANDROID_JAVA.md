@@ -31,11 +31,11 @@ repositories {
 #### 2. 뉴스픽 SDK Dependency를 추가해주세요.
 ```groovy
 dependencies {
-    implementation "kr.newspic.android:sdk:{{newspicSdkVersion}}"
+    implementation "kr.newspic.android:sdk:1.0.0"
 }
 ```
 
-예시) [build.gradle](../NewspicSDKExampleAndroidJava/app/build.gradle#L47)
+예시) [build.gradle](../NewspicSDKExampleAndroidJava/app/build.gradle#L57)
 
 #### 3. 구글 광고식별자 Dependency를 추가해주세요.
 
@@ -45,7 +45,7 @@ dependencies {
 }
 ```
 
-예시) [build.gradle](../NewspicSDKExampleAndroidJava/app/build.gradle#L48)
+예시) [build.gradle](../NewspicSDKExampleAndroidJava/app/build.gradle#L58)
 
 > **Note**
 > 광고 식별자 관련 의존성을 추가하지 않아도 SDK의 기본적인 동장에는 영향을 주지 않습니다.
@@ -73,7 +73,7 @@ public class SampleApplication extends Application {
 }
 ```
 
-예시) [SDKSampleApplication.java](../NewspicSDKExampleAndroidJava/app/src/main/java/com/example/sdksample2/SDKSampleApplication.java#L12-L19)
+예시) [SDKSampleApplication.java](../NewspicSDKExampleAndroidJava/app/src/main/java/kr/newspic/sdksample/SDKSampleApplication.java#L12-L19)
 
 ## View 유형 별 가이드
 
