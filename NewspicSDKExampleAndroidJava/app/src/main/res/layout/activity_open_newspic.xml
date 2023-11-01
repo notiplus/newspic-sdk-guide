@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/noti_black"
+        android:padding="16dp"
+>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+    >
+        <EditText
+                android:id="@+id/txt_url"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="8"
+                android:padding="4dp"
+                android:textColor="@color/noti_black"
+                android:background="@color/noti_white"
+                android:text="https://m.newspic.kr/view.html?nid=2023051714065698766&amp;pn=179"
+                android:layout_marginBottom="16dp"
+        />
+
+        <Button
+                android:id="@+id/btn_open_newspic"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:textSize="16dp"
+                android:text="URL 열기"
+                android:textColor="@color/noti_white"
+                android:background="@color/noti_blue"
+                android:layout_marginBottom="16dp"
+        />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

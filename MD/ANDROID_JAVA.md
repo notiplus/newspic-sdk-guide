@@ -124,3 +124,32 @@ public class CodeAppendActivity extends AppCompatActivity {
     }
 }
 ```
+
+## 뉴스픽 SDK 화면 열기
+
+뉴스픽 SDK는 뉴스픽 도메인에 대한 내장 Activity 열기를 지원합니다.<br>
+내장 Activity 다음과 같은 상황에서 사용하실 수 있습니다.
+- 하이브리드앱에서 뉴스픽API를 사용하여 직접 화면을 구성했을 때 뉴스픽 콘텐츠를 클릭하는 경우
+- 푸시 등을 클릭하여 뉴스픽 콘텐츠 상세페이지로 이동하는 경우
+
+뉴스픽 SDK 내장 Activity 다음과 같이 사용할 수 있습니다.
+```java
+public class OpenNewspicActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_open_newspic);
+
+        Button btnOpenNewspic = findViewById(R.id.btn_open_newspic);
+        btnOpenNewspic.setOnClickListener(view -> {
+            TextView txtUrl = findViewById(R.id.txt_url);
+            String url = txtUrl.getText().toString();
+            
+            //뉴스픽 내장 Activity 엽니다.
+            NewspicSDK.openNewspicActivity(this, url);
+        });
+    }
+}
+```
+> **Warning**
+> 파라미터로 전달되는 URL이 뉴스픽 도메인이 아닌 경우 아무 동작을 하지 않습니다.

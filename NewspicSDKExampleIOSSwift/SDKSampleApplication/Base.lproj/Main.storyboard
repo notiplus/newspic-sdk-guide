@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SDKSampleApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhQ-de-zXU">
+                                <rect key="frame" x="16" y="75" width="361" height="35"/>
+                                <color key="backgroundColor" name="color_noti_blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="JCx-04-8Sb"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="한줄뉴스형 View - StoryBoard">
+                                    <color key="titleColor" name="color_noti_white"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asc-U6-Ac8">
+                                <rect key="frame" x="16" y="126" width="361" height="35"/>
+                                <color key="backgroundColor" name="color_noti_blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="PJn-gk-MQ3"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="한줄뉴스형 View - Code">
+                                    <color key="titleColor" name="color_noti_white"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2F-53-C58">
+                                <rect key="frame" x="16" y="177" width="361" height="35"/>
+                                <color key="backgroundColor" name="color_noti_blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="RGD-V9-yPl"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="리스트형 View">
+                                    <color key="titleColor" name="color_noti_white"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3h-cg-3yj">
+                                <rect key="frame" x="16" y="228" width="361" height="35"/>
+                                <color key="backgroundColor" name="color_noti_blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Rk2-nB-xdC"/>
+                                    <constraint firstAttribute="height" constant="35" id="zFH-5e-qGm"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="웹뷰 열기">
+                                    <color key="titleColor" name="color_noti_white"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="color_noti_black"/>
+                        <constraints>
+                            <constraint firstItem="Q2F-53-C58" firstAttribute="top" secondItem="Asc-U6-Ac8" secondAttribute="bottom" constant="16" id="1o2-Ye-0ov"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q2F-53-C58" secondAttribute="trailing" constant="16" id="3fq-gE-haS"/>
+                            <constraint firstItem="QhQ-de-zXU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="8KX-Bx-3en"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W3h-cg-3yj" secondAttribute="trailing" constant="16" id="HqV-2I-muD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QhQ-de-zXU" secondAttribute="trailing" constant="16" id="IfE-c9-yNu"/>
+                            <constraint firstItem="W3h-cg-3yj" firstAttribute="top" secondItem="Q2F-53-C58" secondAttribute="bottom" constant="16" id="KpQ-rt-GS5"/>
+                            <constraint firstItem="QhQ-de-zXU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="O9h-T6-pwS"/>
+                            <constraint firstItem="Q2F-53-C58" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hi9-3g-zG0"/>
+                            <constraint firstItem="Asc-U6-Ac8" firstAttribute="top" secondItem="QhQ-de-zXU" secondAttribute="bottom" constant="16" id="i3w-Mx-d4k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Asc-U6-Ac8" secondAttribute="trailing" constant="16" id="qPr-6v-MAC"/>
+                            <constraint firstItem="W3h-cg-3yj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sVm-fv-RGe"/>
+                            <constraint firstItem="Asc-U6-Ac8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="u76-6m-rIC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnList" destination="Q2F-53-C58" id="h4m-fQ-EEf"/>
+                        <outlet property="btnOpenWebView" destination="W3h-cg-3yj" id="d9f-uj-0Hf"/>
+                        <outlet property="btnSingleLine" destination="QhQ-de-zXU" id="67T-OM-fhC"/>
+                        <outlet property="btnSingleLineCode" destination="Asc-U6-Ac8" id="IMW-Yg-Ky2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_noti_black">
+            <color red="0.074509803921568626" green="0.078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_noti_blue">
+            <color red="0.11764705882352941" green="0.5725490196078431" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_noti_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

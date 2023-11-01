@@ -1,0 +1,11 @@
+framework module NewspicSDK {
+  umbrella header "NewspicSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module NewspicSDK.Swift {
+  header "NewspicSDK-Swift.h"
+  requires objc
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Open Web View View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OpenWebView" id="Y6W-OH-hqX" customClass="OpenWebViewViewController" customModule="SDKSampleApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="https://m.newspic.kr/view.html?nid=2023051714065698766&amp;pn=179" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BYh-k2-Jv6">
+                                <rect key="frame" x="16" y="75" width="361" height="300"/>
+                                <color key="backgroundColor" name="color_noti_white"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="7nl-wu-kpM"/>
+                                </constraints>
+                                <color key="textColor" name="color_noti_black"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8J-wJ-LI8">
+                                <rect key="frame" x="16" y="391" width="361" height="35"/>
+                                <color key="backgroundColor" name="color_noti_blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="a1n-pc-rhY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="URL Open">
+                                    <color key="baseForegroundColor" name="color_noti_white"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="color_noti_black"/>
+                        <constraints>
+                            <constraint firstItem="BYh-k2-Jv6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="hel-Jx-4Yf"/>
+                            <constraint firstItem="g8J-wJ-LI8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="qno-8u-ldr"/>
+                            <constraint firstItem="BYh-k2-Jv6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="reb-Uf-Jog"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="g8J-wJ-LI8" secondAttribute="trailing" constant="16" id="uk7-cL-35j"/>
+                            <constraint firstItem="g8J-wJ-LI8" firstAttribute="top" secondItem="BYh-k2-Jv6" secondAttribute="bottom" constant="16" id="vxV-kp-NlD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BYh-k2-Jv6" secondAttribute="trailing" constant="16" id="wM1-ay-KWW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnOpen" destination="g8J-wJ-LI8" id="a0S-e4-FG6"/>
+                        <outlet property="textLink" destination="BYh-k2-Jv6" id="IEy-nD-Woc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="color_noti_black">
+            <color red="0.074509803921568626" green="0.078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_noti_blue">
+            <color red="0.11764705882352941" green="0.5725490196078431" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_noti_white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NewspicSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import DeveloperToolsSupport
+import Foundation
+@_exported import NewspicSDK
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum NewspicSDKViewType : Swift.String {
+  case SIGLE_LINE
+  case LIST
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum NewspicSDKViewHeight : Swift.Int {
+  case SIGLE_LINE
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class NewspicSDKManager {
+  public var primaryColor: Swift.String?
+  public var idfa: Swift.String? {
+    get
+    set
+  }
+  public static func shared() -> NewspicSDK.NewspicSDKManager
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NewspicSDKView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var unitId: Swift.String?
+  @_Concurrency.MainActor(unsafe) public var type: NewspicSDK.NewspicSDKViewType?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor(unsafe) public func load()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NewspicDetailViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var url: Swift.String?
+  @_Concurrency.MainActor(unsafe) public static func launch(_ url: Swift.String?, _ parentViewController: UIKit.UIViewController?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NewspicSDK.NewspicSDKViewType : Swift.Equatable {}
+extension NewspicSDK.NewspicSDKViewType : Swift.Hashable {}
+extension NewspicSDK.NewspicSDKViewType : Swift.RawRepresentable {}
+extension NewspicSDK.NewspicSDKViewHeight : Swift.Equatable {}
+extension NewspicSDK.NewspicSDKViewHeight : Swift.Hashable {}
+extension NewspicSDK.NewspicSDKViewHeight : Swift.RawRepresentable {}

@@ -12,6 +12,7 @@ import androidx.navigation.ui.NavigationUI;
 import kr.newspic.android.sdk.NewspicSDKView;
 import kr.newspic.sdksample.activity.ListActivity;
 import kr.newspic.sdksample.activity.ListViewPagerActivity;
+import kr.newspic.sdksample.activity.OpenNewspicActivity;
 import kr.newspic.sdksample.activity.SingleLineActivity;
 import kr.newspic.sdksample.databinding.ActivityMainBinding;
 
@@ -33,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         onClickStartActivity(R.id.btn_list, ListActivity.class);
 
         onClickStartActivity(R.id.btn_list_viewpager, ListViewPagerActivity.class);
+
+        onClickStartActivity(R.id.btn_newspic_activity, OpenNewspicActivity.class);
 
     }
 
