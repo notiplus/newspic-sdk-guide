@@ -22,7 +22,7 @@
 ```groovy
 repositories {
     maven {
-        url "https://notiplus-prd-sdk-bucekt.ap-northeast-2.amazonaws.com/newspic-sdk-android"
+        url "https://notiplus-prd-sdk-bucket.s3.ap-northeast-2.amazonaws.com/newspic-sdk-android"
     }
 }
 ```

@@ -37,6 +37,7 @@ UNIT ID는 뉴스픽 제휴를 통해 발급받을 수 있습니다.<br>
 
 ## 릴리즈 노트
 
-| Version | Platform | Release Date | Changes |
-|:-------:|:--------:|:------------:|:--------|
-|  1.0.0  | Android  |  2023-10-26  | 최초 릴리즈  |
+| Version | Platform | Release Date | Changes                |
+|:-------:|:--------:|:------------:|:-----------------------|
+|  1.0.1  | Android  |  2023-11-02  | Proguard rule 충돌 현상 수정 |
+|  1.0.0  | Android  |  2023-10-26  | 최초 릴리즈                 |
