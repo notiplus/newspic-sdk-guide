@@ -31,7 +31,7 @@ repositories {
 #### 2. 뉴스픽 SDK Dependency를 추가해주세요.
 ```groovy
 dependencies {
-    implementation "kr.newspic.android:sdk:1.0.1"
+    implementation "kr.newspic.android:sdk:1.0.2"
 }
 ```
 
