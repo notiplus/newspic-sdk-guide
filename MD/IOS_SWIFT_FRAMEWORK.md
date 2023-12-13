@@ -41,9 +41,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //퍼블리셔 앱의 메인 컬러를 지정합니다.
-        NewspicSDKs.sharedInstance().primaryColor = "FF0000"
+        NewspicSDKManager.shared().idfa = "FF0000"
         //사용자의 IDFA를 전달합니다.
-        NewspicSDKs.sharedInstance().idfa = getIDFA()
+        NewspicSDKManager.shared().idfa = getIDFA()
         
         return true
     }
