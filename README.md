@@ -40,6 +40,7 @@ UNIT ID는 뉴스픽 제휴를 통해 발급받을 수 있습니다.<br>
 
 | Version |    Platform    | Release Date | Changes                                   |
 |:-------:|:--------------:|:------------:|:------------------------------------------|
+|  1.0.4  |    Android     |  2023-12-18  | onDetachedFromWindow 관련 오류 수정             |
 |  1.0.3  | Android<br>iOS |  2023-11-09  | iOS 지원<br>뉴스픽Activity/ViewController열기 지원 |
 |  1.0.2  |    Android     |  2023-11-09  | 일부 클래스 난독화 제외                             |
 |  1.0.1  |    Android     |  2023-11-02  | Proguard rule 충돌 현상 수정                    |

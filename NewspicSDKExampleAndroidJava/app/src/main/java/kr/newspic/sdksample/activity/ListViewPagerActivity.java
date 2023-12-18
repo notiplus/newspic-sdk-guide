@@ -25,7 +25,7 @@ public class ListViewPagerActivity extends AppCompatActivity {
 
         viewPager2 = findViewById(R.id.view_pager);
         viewPager2.setAdapter(new SimpleFragmentPagerAdapter(this));
-        viewPager2.setOffscreenPageLimit(1);
+//        viewPager2.setOffscreenPageLimit(1);
     }
 
     @Override
@@ -42,6 +42,8 @@ public class ListViewPagerActivity extends AppCompatActivity {
         private final List<Fragment> fragmentList = new ArrayList<Fragment>(){{
             add(new SimpleFragment());
             add(new ListFragment());
+            add(new SimpleFragment());
+            add(new SimpleFragment());
         }};
 
         public SimpleFragmentPagerAdapter(@NonNull @NotNull FragmentActivity fragmentActivity) {
