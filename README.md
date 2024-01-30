@@ -10,6 +10,7 @@
 |:--------:|:---------------:|:-----------:|:------------------------------------------:|
 | Android  |   Java/Kotlin   |      O      |       [Android](MD/ANDROID_JAVA.md)        |
 |   iOS    | Swift/Framework |      O      | [iOS/Framework](MD/IOS_SWIFT_FRAMEWORK.md) |
+|   Web    |   Javascript    |      O      |              [Web](MD/WEB.md)              |
 
 
 ## 디자인 가이드
@@ -45,3 +46,6 @@ UNIT ID는 뉴스픽 제휴를 통해 발급받을 수 있습니다.<br>
 |  1.0.2  |    Android     |  2023-11-09  | 일부 클래스 난독화 제외                             |
 |  1.0.1  |    Android     |  2023-11-02  | Proguard rule 충돌 현상 수정                    |
 |  1.0.0  |    Android     |  2023-10-26  | 최초 릴리즈                                    |
+
+> **Note**
+> Javascript SDK는 항상 최신버전을 사용하므로 별도의 릴리즈노트를 제공하지 않습니다. 
